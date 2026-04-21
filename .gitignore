@@ -1,0 +1,55 @@
+# Claude Code / IDE 로컬 설정
+.claude/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.env
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# 빌드·임시 산출물
+build/
+dist/
+*.egg-info/
+*.log
+*.tmp
+*.swp
+*~
+
+# 모델·데이터 (대용량 — Git LFS 사용 전까지 제외)
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.weights
+*.ckpt
+datasets/
+nuscenes/
+bdd100k/
+
+# 출판 중간 산출물 (PDF 등은 필요 시 Release 로 첨부)
+*.pdf
+*.epub
+*.mobi
+!ebook/cover/*.pdf
+
+# 집필 관련 개인 메모
+NOTES.md
+TODO.private.md
