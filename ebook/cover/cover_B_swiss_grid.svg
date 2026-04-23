@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" preserveAspectRatio="xMidYMid meet" font-family="'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif">
+  <!-- 아이보리 배경 -->
+  <rect width="1600" height="2400" fill="#F5F2EC"/>
+
+  <!-- 상단 그리드 기준선 (얇음) -->
+  <line x1="140" y1="220" x2="1460" y2="220" stroke="#1A1A1A" stroke-width="2"/>
+
+  <!-- 상단 메타 -->
+  <text x="140"  y="190" font-size="22" letter-spacing="6"
+        fill="#1A1A1A" font-weight="700">ALL THAT AI · 01</text>
+  <text x="1460" y="190" font-size="22" letter-spacing="6"
+        fill="#1A1A1A" font-weight="500" text-anchor="end">2026 · SEOUL</text>
+
+  <!-- 우상단 거대 숫자 (장식) -->
+  <text x="1460" y="540" font-size="360" letter-spacing="-20"
+        fill="#E94F2E" font-weight="900" text-anchor="end"
+        style="opacity:0.94">01</text>
+
+  <!-- 좌측 카테고리 라벨 -->
+  <text x="140" y="540" font-size="24" letter-spacing="5"
+        fill="#E94F2E" font-weight="700">TESLA / PHYSICAL AI</text>
+
+  <!-- 제목 — 좌측 정렬, 줄별 y 명시 -->
+  <g font-weight="900" letter-spacing="-5" fill="#1A1A1A">
+    <text x="140" y="860"  font-size="140">테슬라처럼</text>
+    <text x="140" y="1010" font-size="140">만드는</text>
+  </g>
+  <g font-weight="900" letter-spacing="-5">
+    <text x="140" y="1210" font-size="160" fill="#1A1A1A">비전 자율주행과</text>
+    <text x="140" y="1380" font-size="160" fill="#E94F2E">피지컬 AI</text>
+  </g>
+
+  <!-- 하단 그리드 기준선 -->
+  <line x1="140" y1="1500" x2="1460" y2="1500" stroke="#1A1A1A" stroke-width="1"/>
+
+  <!-- 부제 -->
+  <g font-weight="500" letter-spacing="-1" fill="#1A1A1A" fill-opacity="0.85">
+    <text x="140" y="1580" font-size="36">카메라 한 대에서 Optimus 까지,</text>
+    <text x="140" y="1636" font-size="36">픽셀이 핸들이 되는 여정.</text>
+  </g>
+
+  <!-- 키워드 크레딧 (두 줄) -->
+  <g font-family="monospace" font-size="20" letter-spacing="3"
+     fill="#1A1A1A" fill-opacity="0.55">
+    <text x="140" y="1820">FSD v13  ·  OCCUPANCY  ·  DAgger  ·  OpenVLA</text>
+    <text x="140" y="1858">Optimus  ·  Isaac Lab  ·  MentorPi  ·  ROS2</text>
+  </g>
+
+  <!-- 하단 구분 블록 -->
+  <rect x="140" y="2060" width="80" height="6" fill="#E94F2E"/>
+
+  <!-- 저자·푸터 -->
+  <text x="140"  y="2170" font-size="52" fill="#1A1A1A" font-weight="800" letter-spacing="-1">
+    이석창 지음
+  </text>
+  <text x="140"  y="2230" font-size="24" fill="#1A1A1A" fill-opacity="0.65" letter-spacing="2" font-weight="500">
+    Seokchang Lee · KIT · Elice · KOREATECH
+  </text>
+
+  <!-- 우하단 작은 코드 -->
+  <text x="1460" y="2230" font-family="monospace" font-size="20" letter-spacing="2"
+        fill="#1A1A1A" fill-opacity="0.65" text-anchor="end">
+    leelang7/physical-ai-book
+  </text>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" preserveAspectRatio="xMidYMid meet" font-family="'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#060814"/>
+      <stop offset="55%"  stop-color="#0A1D3A"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#FF3B4D" stop-opacity="0.95"/>
+      <stop offset="60%"  stop-color="#FF3B4D" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#FF3B4D" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="2400" fill="url(#sky)"/>
+
+  <!-- 지평선 붉은 후광 -->
+  <circle cx="800" cy="1280" r="820" fill="url(#sun)"/>
+
+  <!-- 지평선 라인 + 글로우 -->
+  <line x1="0" y1="1280" x2="1600" y2="1280" stroke="#FF3B4D" stroke-width="3" filter="url(#glow)"/>
+  <line x1="0" y1="1280" x2="1600" y2="1280" stroke="#FFB8BF" stroke-width="1"/>
+
+  <!-- 원근 그리드 (지평선 아래로 수렴) -->
+  <g stroke="#FF3B4D" stroke-opacity="0.22" stroke-width="1" fill="none">
+    <line x1="0"    y1="2400" x2="800" y2="1280"/>
+    <line x1="200"  y1="2400" x2="800" y2="1280"/>
+    <line x1="400"  y1="2400" x2="800" y2="1280"/>
+    <line x1="600"  y1="2400" x2="800" y2="1280"/>
+    <line x1="800"  y1="2400" x2="800" y2="1280"/>
+    <line x1="1000" y1="2400" x2="800" y2="1280"/>
+    <line x1="1200" y1="2400" x2="800" y2="1280"/>
+    <line x1="1400" y1="2400" x2="800" y2="1280"/>
+    <line x1="1600" y1="2400" x2="800" y2="1280"/>
+  </g>
+  <g stroke="#FF3B4D" stroke-opacity="0.15" stroke-width="1">
+    <line x1="0" y1="1420" x2="1600" y2="1420"/>
+    <line x1="0" y1="1600" x2="1600" y2="1600"/>
+    <line x1="0" y1="1830" x2="1600" y2="1830"/>
+    <line x1="0" y1="2100" x2="1600" y2="2100"/>
+  </g>
+
+  <!-- 상단 브랜드 -->
+  <g transform="translate(140,200)">
+    <rect x="0" y="0" width="60" height="2" fill="#FF3B4D"/>
+    <text x="80" y="8" font-size="22" letter-spacing="6" fill="#EAECEF" font-weight="600">
+      ALL THAT AI · VOL.01
+    </text>
+  </g>
+  <text x="1460" y="208" font-size="22" letter-spacing="6"
+        fill="#EAECEF" fill-opacity="0.65" font-weight="500" text-anchor="end">
+    PHOTON → CONTROL
+  </text>
+
+  <!-- 메인 제목 — 각 행 y 명시 -->
+  <g fill="#FFFFFF" letter-spacing="-3">
+    <text x="140" y="560"  font-size="72"  font-weight="400">테슬라처럼 만드는</text>
+    <text x="140" y="740"  font-size="148" font-weight="900">비전 자율주행</text>
+    <text x="140" y="900"  font-size="68"  font-weight="400" fill-opacity="0.78">그리고</text>
+    <text x="140" y="1080" font-size="148" font-weight="900" fill="#FF3B4D">피지컬 AI</text>
+  </g>
+
+  <!-- 지평선 위 얇은 부제 -->
+  <g fill="#EAECEF" fill-opacity="0.82" font-weight="500" letter-spacing="-1">
+    <text x="140" y="1210" font-size="32">카메라 한 대에서 Optimus 까지 · 픽셀이 핸들이 되는 여정.</text>
+  </g>
+
+  <!-- 지평선 중앙 핵심 구절 (지평선 바로 아래) -->
+  <g fill="#FFB8BF" font-weight="600" letter-spacing="4" text-anchor="middle">
+    <text x="800" y="1360" font-size="24">PHOTON · IN</text>
+    <text x="800" y="1400" font-size="24">——</text>
+    <text x="800" y="1440" font-size="24">CONTROL · OUT</text>
+  </g>
+
+  <!-- 저자명 -->
+  <text x="140" y="2170" font-size="48" letter-spacing="-1" fill="#FFFFFF" font-weight="700">
+    이석창 지음
+  </text>
+  <text x="140" y="2220" font-size="22" letter-spacing="3" fill="#EAECEF" fill-opacity="0.65" font-weight="500">
+    Seokchang Lee  ·  leelang7  ·  @aidoer
+  </text>
+
+  <!-- 오른쪽 아래 얇은 서명 -->
+  <text x="1460" y="2220" font-family="monospace" font-size="18" letter-spacing="2"
+        fill="#EAECEF" fill-opacity="0.55" text-anchor="end">
+    leelang7/physical-ai-book
+  </text>
+</svg>

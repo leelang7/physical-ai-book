@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2400" preserveAspectRatio="xMidYMid meet" font-family="'Pretendard','Apple SD Gothic Neo','Noto Sans KR',sans-serif">
+  <defs>
+    <linearGradient id="blk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0B0C10"/>
+      <stop offset="100%" stop-color="#050507"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#E11D2E"/>
+      <stop offset="100%" stop-color="#8A0C1B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 좌측 딥 블랙 / 우측 레드 컬럼 -->
+  <rect x="0"    y="0" width="1040" height="2400" fill="url(#blk)"/>
+  <rect x="1040" y="0" width="560"  height="2400" fill="url(#red)"/>
+
+  <!-- 우측 컬럼 타이포 (세로 회전) -->
+  <g transform="translate(1320,1200) rotate(-90)">
+    <text text-anchor="middle" font-size="26" letter-spacing="14"
+          fill="#FFFFFF" fill-opacity="0.92" font-weight="600">
+      ALL THAT AI · VOL.01 · 2026
+    </text>
+  </g>
+
+  <!-- 우측 컬럼 상단 작은 라벨 -->
+  <text x="1070" y="240" font-size="22" letter-spacing="6"
+        fill="#FFFFFF" fill-opacity="0.75" font-weight="600">PHOTON→CONTROL</text>
+
+  <!-- 우측 컬럼 하단 번호 -->
+  <text x="1070" y="2260" font-size="220" letter-spacing="-8"
+        fill="#FFFFFF" fill-opacity="0.92" font-weight="900">01</text>
+  <rect x="1070" y="2296" width="80" height="4" fill="#FFFFFF" fill-opacity="0.92"/>
+
+  <!-- 좌측 상단 브랜드 라인 -->
+  <g transform="translate(120,200)">
+    <rect x="0" y="0" width="80" height="3" fill="#E11D2E"/>
+    <text x="100" y="10" font-size="22" letter-spacing="6"
+          fill="#F4F4F6" fill-opacity="0.85" font-weight="600">
+      TESLA · VISION · PHYSICAL AI
+    </text>
+  </g>
+
+  <!-- 좌측 메인 타이포 — 모든 행 y 명시(겹침 없음) -->
+  <g fill="#F4F4F6">
+    <!-- 윗줄 얇게 -->
+    <text x="120" y="760"  font-size="72"  letter-spacing="-2" font-weight="400">테슬라처럼</text>
+    <text x="120" y="860"  font-size="72"  letter-spacing="-2" font-weight="400">만드는</text>
+    <!-- 아랫줄 굵게 -->
+    <text x="120" y="1060" font-size="132" letter-spacing="-5" font-weight="900">비전 자율주행</text>
+  </g>
+  <g fill="#E11D2E">
+    <text x="120" y="1200" font-size="132" letter-spacing="-5" font-weight="900">피지컬 AI</text>
+  </g>
+
+  <!-- 구분선 -->
+  <line x1="120" y1="1340" x2="360" y2="1340" stroke="#E11D2E" stroke-width="4"/>
+
+  <!-- 부제 -->
+  <g fill="#F4F4F6" fill-opacity="0.82">
+    <text x="120" y="1420" font-size="34" letter-spacing="-1" font-weight="500">
+      카메라 한 대에서 Optimus 까지,
+    </text>
+    <text x="120" y="1472" font-size="34" letter-spacing="-1" font-weight="500">
+      픽셀이 핸들이 되는 여정.
+    </text>
+  </g>
+
+  <!-- 저자명 -->
+  <text x="120" y="2180" font-size="48" letter-spacing="-1"
+        fill="#F4F4F6" font-weight="700">이석창 지음</text>
+
+  <!-- 좌측 하단 푸터 -->
+  <g fill="#F4F4F6" fill-opacity="0.55" font-size="20" letter-spacing="3">
+    <text x="120" y="2260" font-weight="500">github.com/leelang7 · youtube.com/@aidoer</text>
+  </g>
+</svg>
