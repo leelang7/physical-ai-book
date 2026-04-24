@@ -49,6 +49,7 @@ bdd100k/
 *.epub
 *.mobi
 !ebook/cover/*.pdf
+!ebook/전체원고_*.pdf
 
 # 집필 관련 개인 메모
 NOTES.md
@@ -56,3 +57,6 @@ TODO.private.md
 
 # SVG → PNG 변환용 임시 HTML 래퍼
 ebook/cover/render_*.html
+
+# PDF 빌드 중간 산출물 HTML
+ebook/전체원고_*.html
