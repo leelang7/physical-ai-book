@@ -44,19 +44,47 @@ datasets/
 nuscenes/
 bdd100k/
 
-# 출판 중간 산출물 (PDF 등은 필요 시 Release 로 첨부)
+# ─────────────────────────────────────────────
+# 비공개 — 유료 책 원고 및 내부 출판 자료
+# (로컬에는 그대로 유지하되 GitHub 공개 저장소에는 노출하지 않음)
+# ─────────────────────────────────────────────
+
+# 책 원고 (Markdown 초안 + 컴파일본)
+draft/
+ebook/전체원고_*.md
+ebook/전체원고_*.html
+ebook/전체원고_*.pdf
+ebook/전체원고_*.epub
+
+# 내부 출판 전략·운영 문서
+ebook/00_플랫폼_추천.md
+ebook/가격전략.md
+ebook/검증_리포트.md
+ebook/런칭_템플릿.md
+ebook/메타데이터.md
+ebook/발송_직전_최종안내.md
+ebook/업로드_붙여넣기.md
+ebook/제출가이드_부크크.md
+ebook/제출가이드_유페이퍼.md
+ebook/책소개_상세.md
+ebook/출판_체크리스트.md
+ebook/표지_컨셉.md
+ebook/release_notes_v1.0.md
+
+# 표지 작업 노트
+ebook/cover/RESULT.md
+ebook/cover/render_*.html
+
+# 책 빌드 도구 (마크다운 → PDF 파이프라인 — 내부 운영용)
+scripts/build_manuscript.sh
+scripts/build_pdf.py
+scripts/export_cover.md
+
+# 일반 PDF (예외: 표지·QR 디렉토리는 명시적으로 허용 안 함 — 둘 다 PNG 기반)
 *.pdf
 *.epub
 *.mobi
-!ebook/cover/*.pdf
-!ebook/전체원고_*.pdf
 
 # 집필 관련 개인 메모
 NOTES.md
 TODO.private.md
-
-# SVG → PNG 변환용 임시 HTML 래퍼
-ebook/cover/render_*.html
-
-# PDF 빌드 중간 산출물 HTML
-ebook/전체원고_*.html

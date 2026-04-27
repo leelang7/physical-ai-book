@@ -1,0 +1,40 @@
+MIT License
+
+Copyright (c) 2026 Seokchang Lee (이석창)
+
+This license applies to the source code (`code/`, `scripts/`) and figure
+assets (`ebook/cover/`, `ebook/qr/`) of this repository only.
+
+The book manuscript "테슬라처럼 만드는 비전 자율주행과 피지컬 AI"
+(All That AI · Vol.01) is NOT included in this repository and is sold
+separately on Bookk and Upaper. The book text remains
+© 2026 Seokchang Lee — All rights reserved.
+
+---
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+---
+
+Trademark notice: Tesla, Autopilot, FSD, Optimus, Dojo, Waymo, Mobileye,
+NVIDIA, Wayve, Comma.ai, Figure, 1X, Boston Dynamics, Unitree, and other
+brand names referenced in this repository or in the companion book are
+trademarks of their respective owners. The author has no affiliation with
+or endorsement from those companies. This work is an independent
+educational commentary.

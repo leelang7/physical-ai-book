@@ -1,12 +1,78 @@
 # 테슬라처럼 만드는 비전 자율주행과 피지컬 AI
 
-> 카메라 한 대에서 Optimus까지, 픽셀이 핸들이 되는 여정.
-> **All That AI · Vol. 01**
+> 카메라 한 대에서 Optimus 까지, 픽셀이 핸들이 되는 여정.
+> **All That AI · Vol.01** · 이석창 (Seokchang Lee) 지음
 
-국내에 한국어로 된 **Tesla Vision-only · End-to-End · Physical AI** 교재가 없다는 답답함에서 출발한 집필 프로젝트의 공개 저장소입니다. 자율주행 차량(FSD) 에서 휴머노이드(Optimus) 와 VLA 모델까지, "사람이 보는 그대로를 공학으로 옮긴다" 는 한 줄기의 이야기로 꿰어 냈습니다.
+도서 *"테슬라처럼 만드는 비전 자율주행과 피지컬 AI"* 의 **공식 컴패니언 저장소** 입니다. 책 본문은 부크크에서 구매하실 수 있고, 이 저장소에는 **장별 실습 코드 · QR 코드 · 정오표** 가 단계별로 공개됩니다.
 
-> **광합성을 구현한 것이 태양광 발전이고, 뇌를 구현한 것이 신경망이라면,
-> 사람이 보는 그대로를 구현한 것이 Tesla 의 비전 신경망입니다.**
+> 광합성을 구현한 것이 태양광 발전이고, 뇌를 구현한 것이 신경망이라면,
+> 사람이 보는 그대로를 구현한 것이 Tesla 의 비전 신경망입니다.
+
+---
+
+## 📖 도서 구매
+
+- **부크크 전자책** : https://bookk.co.kr/bookStore/69eb15e3ee2f092c79a5fc74
+- **유페이퍼 전자책** : (등록 후 갱신)
+- **교보문고 · 예스24 · 알라딘** : 유페이퍼 제휴 노출 (등록 후 갱신)
+
+정가 19,900원 · 런칭 4주 한정 14,900원 · 8부 30장 + 부록 4개 · 220페이지.
+
+---
+
+## 책의 핵심 입장
+
+1. **Vision-only · End-to-End** — LiDAR · HD Map 중심의 고전 교재와 반대 방향. Tesla 가 2024년 FSD v12 에서 보여 준 *"픽셀이 핸들이 되는"* 세상을 한 줄기로 풀어냅니다.
+2. **Physical AI 로의 확장** — 자율주행에서 멈추지 않고 Optimus · Isaac Lab · VLA · World Model 까지. 자율주행차와 휴머노이드가 *"같은 뇌, 다른 몸"* 이라는 관점.
+3. **모방학습 주력, 강화학습은 보조** — 국내 학생·엔지니어가 실제 성과를 내는 경로는 BC → HG-DAgger 루프입니다. 저자의 2026년 *See-ParkingNet* 논문이 이 입장의 학술적 근거입니다.
+4. **계산이 아니라 인식** — 모듈형은 이진화 · 미분 · 특징점을 *계산* 합니다. 신경망은 *인식* 합니다. 이 대조가 세대 전환의 본질이고 책 전체의 뼈대입니다.
+5. **강의 · 영상 · 코드 3중 동반** — 본 저장소(코드) + YouTube *All That AI* (영상) + 책(본문) 이 1:1 로 묶입니다.
+
+---
+
+## 이 저장소에 있는 것
+
+```
+physical-ai-book/
+├── README.md
+├── LICENSE
+├── errata.md                    # 정오표 (이슈 수집 후 누적)
+├── code/                        # 장별 실습 코드 (M1~M5 단계 공개)
+│   ├── README.md                # 공개 로드맵
+│   ├── environment/
+│   ├── ch04_isp/  ch05_hydra/  ch06_occ/  ch07_bev/  ch08_heads/
+│   ├── ch09_pred/ ch10_planner/ ch11_control/
+│   ├── ch20_bc_dagger/ ch21_rl/ ch22_vla/
+│   ├── ch24_mini_hydra/ ch25_mini_occ/ ch27_isaac_lab/
+│   └── ch29_mentorpi/ ch30_ros2/
+├── ebook/
+│   ├── cover/                   # 표지 아트 (A Red Column · B Swiss · C Neon)
+│   └── qr/                      # 장별 QR PNG 31개 + 독자 안내
+└── scripts/
+    └── build_qr.py              # QR 재생성 스크립트
+```
+
+책 본문(원고·PDF) 은 이 저장소에 포함되지 않습니다. 부크크·유페이퍼에서 구매하셔야 합니다.
+
+---
+
+## 실습 코드 공개 로드맵
+
+| 시점 | 공개 내용 |
+|---|---|
+| **M1 (출간+4주)** | environment · ch04 · ch05 · ch09 · ch10 |
+| **M2 (출간+8주)** | ch06 · ch07 · ch08 · ch11 |
+| **M3 (출간+12주)** | ch20 · ch21 · ch22 · ch24 · ch25 · ch29 |
+| **M4 (출간+16주)** | ch27 · ch30 |
+| **M5 (출간+20주)** | 전 장 + Docker 이미지 공개 |
+
+자세한 내용은 [code/README.md](code/README.md) 참고.
+
+---
+
+## QR 코드 사용법
+
+각 장 끝의 QR 은 [ebook/qr/](ebook/qr/) 의 같은 번호 PNG 와 1:1 대응합니다. 책 출간(v1.0) 시점에는 모두 YouTube 채널 메인(`@aidoer`)으로 연결되며, 영상이 누적되는 대로 *"Tesla Book Ch.XX"* 일관된 제목으로 채널 안에서 검색하실 수 있습니다.
 
 ---
 
@@ -16,94 +82,27 @@
 Korea IT Academy · 미래융합교육원 · Elice Group · EST soft · 한국기술교육대학교
 
 - 📧 [leescvsir@gmail.com](mailto:leescvsir@gmail.com)
-- 🌐 GitHub · [github.com/leelang7](https://github.com/leelang7)
+- 🌐 GitHub · [github.com/leelang7](https://github.com/leelang7) (112+ 공개 저장소)
 - ▶️ YouTube · [All That AI (@aidoer)](https://www.youtube.com/@aidoer)
 
-2026년 발표 논문 *"See-ParkingNet: A Robust Imitation Learning Framework for Autonomous Mobile Robots via Geometric Perturbation of Synthetic Experts"* 와 2025년 한국장애인개발원 이사장상 · 서울AI허브재단 이사장상 등의 수상 이력을 갖고 있으며, 본 교재가 표방하는 **"모방학습 + DAgger 주력, 강화학습은 보조"** 입장의 학술적 근거를 이 연구가 직접 제공합니다.
-
----
-
-## 이 책의 핵심 입장
-
-1. **Vision-only · End-to-End** — LiDAR·HD Map 중심의 고전 교재와 반대 방향. Tesla 가 2024년 FSD v12 에서 보여 준 *"픽셀이 핸들이 되는"* 세상을 한 줄기로 풀어냅니다.
-2. **Physical AI 로의 확장** — 자율주행에서 멈추지 않고 Optimus · Isaac Lab · VLA · World Model 까지 한 파트(5장 분량) 로 이어 갑니다. 자율주행차와 휴머노이드가 **같은 뇌, 다른 몸** 이라는 관점.
-3. **모방학습 주력, 강화학습은 보조** — 국내 학생·엔지니어가 실제 성과를 내는 경로는 BC → HG-DAgger 루프입니다. 20장이 이 파트의 엔진룸이고, 21장은 RL 의 정당한 영역과 고장 패턴을 정직하게 다룹니다.
-4. **"계산이 아니라 인식"** — 모듈형은 이진화 · 미분 · 특징점을 **계산** 합니다. 신경망은 **인식** 합니다. 이 대조가 세대 전환의 본질이고 책 전체의 뼈대입니다.
-5. **강의 · 영상 · 코드 3중 동반** — 본 저장소는 책의 실습 코드 베이스이며, 각 장 QR 코드가 YouTube *All That AI* 해설 영상으로 이어집니다.
-
----
-
-## 구성
-
-전체 원고는 **8부 30장 + 부록 4개**, 약 436,000자 분량입니다. 집필은 서술형(prose) 문체, 1인칭 강사 목소리, 한국적 비유 중심으로 일관됩니다.
-
-| 부 | 장 | 주제 |
-|---|---|---|
-| 1부 | 1~3 | 자율주행의 세 번의 물결 · Vision-only · End-to-End |
-| 2부 | 4~8 | ISP · HydraNet · Occupancy · BEV · Vector Space · Lane / Sign / Object |
-| 3부 | 9~11 | 궤적 예측 · Neural Planner · Control |
-| 4부 | 12~14 | Fleet Data Engine · Auto-labeling · Simulation |
-| 5부 | 15~17 | Dojo · 분산 학습 · Shadow / OTA |
-| 6부 | 18~22 | Physical AI · Optimus · **모방학습 + DAgger** · 강화학습의 자리 · World Model / VLA |
-| 7부 | 23~27 | 환경 구축 · Mini HydraNet · Mini Occupancy · openpilot · Isaac Lab |
-| 8부 | 28~30 | 미래 · **MentorPi 실증** · **ROS2 통합** |
-| 부록 | A~D | 수학 속성 복습 · 핵심 논문 50선 · 한/영 용어집 · 저자 연계 가이드 |
-
----
-
-## 저장소 구조
-
-```
-physical-ai-book/
-├── draft/            # 본문 원고(서문·목차·30장·부록 4개, v2.0)
-├── ebook/
-│   ├── 전체원고_v2.0.md         # 한 파일로 묶인 최종 원고 (448k자)
-│   ├── cover/                  # 표지 SVG 3안(A Red Column · B Swiss · C Neon)
-│   ├── 책소개_상세.md
-│   ├── 메타데이터.md
-│   ├── 가격전략.md
-│   ├── 표지_컨셉.md
-│   ├── 제출가이드_부크크.md
-│   ├── 제출가이드_유페이퍼.md
-│   ├── 검증_리포트.md
-│   └── 출판_체크리스트.md       # v2.0 기준 단계별 발송 가이드
-├── code/             # 장별 실습 코드 스텁 (출간 일정에 맞춰 채워짐)
-│   ├── README.md                # 공개 로드맵 M1~M5
-│   ├── environment/             # Docker · requirements · setup.sh
-│   ├── ch04_isp/ ... ch30_ros2/ # 16개 장 스텁 디렉토리
-├── scripts/          # 빌드·내보내기 도구
-│   ├── build_manuscript.sh      # 원고 단일 MD·PDF·EPUB 빌드
-│   └── export_cover.md          # SVG → PNG 내보내기 4가지 방법
-├── assets/           # (예정) 다이어그램 · 화보 자료
-└── references/       # (예정) 참조 자료
-```
-
-각 장별 실습 노트북은 `code/README.md` 의 공개 로드맵(M1~M5, 20주)에 따라 순차 공개됩니다.
-
----
-
-## 전자책 출간 계획
-
-본 원고는 **부크크(Bookk) 와 유페이퍼(Upaper) 동시 전자책 출간** 을 목표로 준비되어 있습니다. 출간 시 교보문고 · 예스24 · 알라딘 에서 검색 가능합니다.
-
-- 정가 : 19,900원
-- 런칭 할인 : 14,900원 (첫 4주)
-- 부크크 POD 종이책 전환 예정 (초기 전자책 판매 누적 후)
-
----
-
-## 라이선스
-
-- **본문 원고** (`draft/`, `ebook/*.md`) : © 2026 Seokchang Lee. All rights reserved. 상업적 재배포·재출판은 저자의 사전 서면 동의가 필요합니다.
-- **실습 코드** (향후 추가될 `ch*/` 폴더 내부) : **MIT License** 로 공개 예정.
-- **상표 면책** : 본 저장소와 도서에 언급되는 Tesla · Autopilot · FSD · Optimus · Dojo · Waymo · Mobileye · NVIDIA · Wayve · Comma.ai · Figure · 1X · Boston Dynamics · Unitree 등의 상표는 각 소유자의 자산이며, 저자와 직접적인 제휴·후원 관계는 없습니다. 본서는 교육 목적의 비공식 해설입니다.
+2026년 발표 논문 *"See-ParkingNet: A Robust Imitation Learning Framework for Autonomous Mobile Robots via Geometric Perturbation of Synthetic Experts"* 와 2025년 한국장애인개발원 이사장상 · 서울AI허브재단 이사장상 · 고용노동부 수상 등의 이력이 있습니다.
 
 ---
 
 ## 기여 · 오탈자 제보
 
-- 책 오타·오류 : 이 저장소의 [Issues](https://github.com/leelang7/physical-ai-book/issues) 에 제보해 주세요.
-- 실습 코드 개선 : Pull Request 환영합니다.
-- 커뮤니티·질문 : YouTube *All That AI* 댓글 또는 저자 이메일.
+- **책 오류 / 오타** : [Issues](https://github.com/leelang7/physical-ai-book/issues) 에 제보 → [errata.md](errata.md) 에 누적
+- **실습 코드 개선** : Pull Request 환영
+- **강의 · 부트캠프 채택 문의** : leescvsir@gmail.com (강사용 평가 가이드 별도 제공)
+- **커뮤니티 · 질문** : YouTube *All That AI* 댓글
 
-여러분의 피드백 하나하나가 개정판을 만듭니다. 독자와 함께 자라는 책을 지향합니다.
+여러분의 피드백 하나하나가 개정판을 만듭니다.
+
+---
+
+## 라이선스
+
+- **실습 코드** ([code/](code/), [scripts/](scripts/)) : **MIT License** ([LICENSE](LICENSE))
+- **표지 · QR PNG** ([ebook/cover/](ebook/cover/), [ebook/qr/](ebook/qr/)) : 자유 재배포 가능 (출처 표기 권장)
+- **책 본문** : © 2026 Seokchang Lee. All rights reserved. 본 저장소에는 포함되지 않으며, 상업적 재배포 · 재출판은 저자의 사전 서면 동의가 필요합니다.
+- **상표 면책** : Tesla · Autopilot · FSD · Optimus · Dojo · Waymo · Mobileye · NVIDIA · Wayve · Comma.ai · Figure · 1X · Boston Dynamics · Unitree 등의 상표는 각 소유자의 자산이며, 저자와의 직접적인 제휴 · 후원 관계는 없습니다. 본서 및 본 저장소는 교육 목적의 비공식 해설 자료입니다.
