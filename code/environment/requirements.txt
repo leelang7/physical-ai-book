@@ -1,0 +1,39 @@
+# Tesla Vision + Physical AI 실습 공통 의존성
+# 대상 장: ch04 ~ ch25 공통 (ch27 Isaac Lab · ch29 MentorPi · ch30 ROS2 는 각 디렉토리 별도 환경)
+# 검증 환경: Python 3.11, CUDA 12.4, PyTorch 2.5
+
+# ── 코어 ──
+torch==2.5.1
+torchvision==0.20.1
+numpy>=1.24,<2.0
+scipy>=1.11
+
+# ── 컴퓨터 비전 ──
+opencv-python==4.10.0.84
+Pillow>=10.0
+matplotlib>=3.8
+einops>=0.7
+albumentations>=1.4
+
+# ── 데이터 ──
+pandas>=2.1
+pyyaml>=6.0
+tqdm>=4.66
+
+# ── 노트북 ──
+jupyter>=1.0
+jupyterlab>=4.0
+ipywidgets>=8.1
+
+# ── ML 유틸 ──
+scikit-learn>=1.4
+tensorboard>=2.15
+torchmetrics>=1.3
+
+# ── 추적·실험 관리 (선택) ──
+# wandb>=0.16
+
+# ── 데이터셋 로더 (장별로 필요 시 활성화) ──
+# nuscenes-devkit>=1.1.11      # ch06, ch25 — Occupancy Network
+# bdd100k>=1.0                  # ch24 — Mini HydraNet
+# carla>=0.9.15                 # ch14 — Simulation
