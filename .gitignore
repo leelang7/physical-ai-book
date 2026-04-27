@@ -88,3 +88,10 @@ scripts/export_cover.md
 # 집필 관련 개인 메모
 NOTES.md
 TODO.private.md
+
+# 실습 코드 산출물 (PNG 이미지·텐서보드 로그·체크포인트)
+code/**/out_*.png
+code/**/src_*.png
+code/**/wb_*.png
+code/**/runs/
+code/**/.venv/
