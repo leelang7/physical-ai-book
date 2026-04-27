@@ -56,20 +56,11 @@ ebook/전체원고_*.html
 ebook/전체원고_*.pdf
 ebook/전체원고_*.epub
 
-# 내부 출판 전략·운영 문서
-ebook/00_플랫폼_추천.md
-ebook/가격전략.md
-ebook/검증_리포트.md
-ebook/런칭_템플릿.md
-ebook/메타데이터.md
-ebook/발송_직전_최종안내.md
-ebook/업로드_붙여넣기.md
-ebook/제출가이드_부크크.md
-ebook/제출가이드_유페이퍼.md
-ebook/책소개_상세.md
-ebook/출판_체크리스트.md
-ebook/표지_컨셉.md
-ebook/release_notes_v1.0.md
+# 내부 출판 전략·운영 문서 — ebook/ 안의 모든 .md 는 기본 비공개,
+# 단 cover/ 와 qr/ 디렉토리만 명시적으로 허용 (READMEs 포함)
+ebook/*.md
+!ebook/cover/README.md
+!ebook/qr/README.md
 
 # 표지 작업 노트
 ebook/cover/RESULT.md
