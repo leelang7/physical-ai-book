@@ -70,6 +70,17 @@ ebook/cover/render_*.html
 scripts/build_manuscript.sh
 scripts/build_pdf.py
 scripts/export_cover.md
+scripts/build_bookk_print_v2.py
+scripts/build_print_cover.py
+scripts/build_upaper_v2_2.py
+scripts/insert_imprint.py
+scripts/render_cover_upaper.py
+
+# 표지 작업물 (공개 표지는 별도 커밋, 작업본은 비공개)
+ebook/cover/print_cover_spread.svg
+ebook/cover/print_cover_spread_preview.png
+ebook/cover/cover_upaper.svg
+ebook/cover/cover_upaper.png
 
 # 일반 PDF (예외: 표지·QR 디렉토리는 명시적으로 허용 안 함 — 둘 다 PNG 기반)
 *.pdf
