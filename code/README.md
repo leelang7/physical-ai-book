@@ -24,22 +24,25 @@
 | `ch29_mentorpi/` | 29장 | MentorPi 실증 — 캘리브레이션 · Lane · BEV · DAgger |
 | `ch30_ros2/` | 30장 | ROS2 노드 · 런치 파일 · QoS 예제 |
 
-## 현재 상태 (2026-04-27 출간일 기준)
+## 현재 상태 (2026-05-08 기준)
 
 | 디렉토리 | 상태 |
 |---|---|
-| `environment/` | ✅ **부트 가능** — Dockerfile · `requirements.txt` · `setup.sh` · `.env.sample` 제공. 자세한 사용법은 [environment/README.md](environment/README.md) |
-| `ch*/` 16개 | 📋 README 스텁만 존재. 본격 코드는 아래 M1~M5 일정대로 누적됨 |
+| `environment/` | ✅ 동작 (Docker · venv · requirements) |
+| **M1 (4개 장)** | ✅ **공개 완료** — ch04 · ch05 · ch09 · ch10 |
+| **M2 (4개 장)** | ✅ **공개 완료** (예정보다 6주 조기) — ch06 · ch07 · ch08 · ch11 |
+| M3 (6개 장) | 📋 스텁 — ch20 · ch21 · ch22 · ch24 · ch25 · ch29 |
+| M4 (2개 장) | 📋 스텁 — ch27 · ch30 |
 
-지금 당장 동작 가능한 것은 *공통 개발 환경 구축* 입니다. 본문을 따라 읽으면서 환경부터 갖춰 두시고, 각 장 코드는 일정에 맞춰 들러 주세요.
+8개 장의 코드가 지금 당장 동작합니다 (CPU + 합성 입력 + 외부 데이터셋 불필요).
 
-## 공개 일정 (출간일 기준 T+N 주)
+## 공개 일정 (출간일 2026-04-27 기준)
 
-- **M1 (T+4주, ~ 2026-05-25)** — ch04 ISP · ch05 HydraNet · ch09 Prediction · ch10 Planner 1차 공개
-- **M2 (T+8주, ~ 2026-06-22)** — ch06 Occupancy · ch07 BEV · ch08 Heads · ch11 Control 추가
-- **M3 (T+12주, ~ 2026-07-20)** — ch20 BC/DAgger · ch21 RL · ch22 VLA · ch24 Mini HydraNet · ch25 Mini Occ · ch29 MentorPi 추가
-- **M4 (T+16주, ~ 2026-08-17)** — ch27 Isaac Lab · ch30 ROS2 추가
-- **M5 (T+20주, ~ 2026-09-14)** — 전 장 완성 + 도커 이미지 Hub 배포
+- **M1 (~ 2026-05-25)** — ✅ **2026-04-29 완료** : ch04 · ch05 · ch09 · ch10
+- **M2 (~ 2026-06-22)** — ✅ **2026-05-08 완료 (조기)** : ch06 · ch07 · ch08 · ch11
+- **M3 (~ 2026-07-20)** — 📋 예정 : ch20 · ch21 · ch22 · ch24 · ch25 · ch29
+- **M4 (~ 2026-08-17)** — 📋 예정 : ch27 · ch30
+- **M5 (~ 2026-09-14)** — 📋 예정 : 전 장 + 도커 이미지 Hub 배포
 
 각 마일스톤은 GitHub Release 태그 (`v1.1`, `v1.2`, ... `v1.5`) 로 박힙니다. 우측 *"Watch → Releases only"* 를 켜 두시면 코드 공개 시 알림이 옵니다.
 
